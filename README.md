@@ -7,8 +7,8 @@ Check the dotnet command is executable on your environment, if not install it.
 dotnet add package Microsoft.Azure.Devices.Client
 dotnet add package Microsoft.Azure.Devices.Provisioning.Client
 dotnet add package Microsoft.Azure.Devices.Provisioning.Transport.Amqp
-
 ```
+
 ## Creating a certificate
 
 Execute the following command:
