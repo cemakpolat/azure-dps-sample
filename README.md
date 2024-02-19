@@ -1,9 +1,14 @@
-# Device Provisioning Sample App
+# Device Provisioning Exmaple App
+This example code aims at showing a device provisioning use case. The code is constructed on the https://github.com/MattHoneycutt/ps-create-iot-solutions/blob/master/device-provisioning-sample/
 
-This app is a companion for my "Create IoT Solutions" course at Pluralsight. 
+Check the dotnet command is executable on your environment, if not install it. 
+## Install the  reqired libs
+```
+dotnet add package Microsoft.Azure.Devices.Client
+dotnet add package Microsoft.Azure.Devices.Provisioning.Client
+dotnet add package Microsoft.Azure.Devices.Provisioning.Transport.Amqp
 
-`dotnet build`
-
+```
 ## Creating a certificate
 
 Execute the following command:
@@ -11,6 +16,10 @@ Execute the following command:
 `dotnet run setup`
 
 This will create the certificate, which can then be used to create an individual enrollment.
+
+## Build the code
+
+`dotnet build`
 
 ## Simulate a device
 
@@ -20,9 +29,3 @@ Execute the following command:
 
 The `{id-scope}` parameter is the ID Scope of your device provisioning service. 
 
-```
-dotnet add package Microsoft.Azure.Devices.Client
-dotnet add package Microsoft.Azure.Devices.Provisioning.Client
-dotnet add package Microsoft.Azure.Devices.Provisioning.Transport.Amqp
-
-```
