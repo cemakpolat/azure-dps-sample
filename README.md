@@ -29,3 +29,4 @@ Execute the following command:
 
 The `{id-scope}` parameter is the ID Scope of your device provisioning service. 
 
+To gain more insight into Azure DPS and related products: https://medium.com/@akpolatcem/azure-iot-dps-iot-hub-and-stream-analytics-46c0586a0bfd
